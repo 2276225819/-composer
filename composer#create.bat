@@ -1,5 +1,6 @@
-@set /P input=input project name:
-php.lnk composer.phar create-project %input% --prefer-dist --repository-url https://packagist.phpcomposer.com temp
+@set /P vendor=input project name:
+@set /P version=input project version:
+php.lnk composer.phar create-project --repository-url https://packagist.phpcomposer.com  %vendor% temp %version%
 for /D %%i in (temp\*) do (move %%i ..)
 move temp\* ..
 rd temp

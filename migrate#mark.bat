@@ -1,5 +1,4 @@
-@echo 正在创建新分支：
-@echo 确定？
+@echo create new migration?
 @pause  
 php.lnk ..\artisan make:migration db
 @pause
