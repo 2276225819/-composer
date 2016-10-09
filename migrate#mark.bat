@@ -1,5 +1,6 @@
-@echo 正在创建新分支：
-@echo 确定？
-@pause  
-php.lnk ..\artisan make:migration db
-@pause
+:LOOP
+@echo input migrate name: 
+@set /P input= " > " 
+php.lnk ..\artisan make:migration %input%
+pause
+goto LOOP
