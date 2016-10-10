@@ -1,5 +1,7 @@
-@set /P vendor=input project name:
-@set /P version=input project version:
+@echo input project name:
+@set /P vendor=" > "
+@echo input project version:
+@set /P version=" > " 
 php.lnk composer.phar create-project --repository-url https://packagist.phpcomposer.com  %vendor% temp %version%
 for /D %%i in (temp\*) do (move %%i ..)
 move temp\* ..
