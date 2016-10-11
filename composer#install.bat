@@ -1,5 +1,4 @@
-:do
-del "..\composer.lock"
-php.lnk composer.phar install -d ..
+@call set_path.bat  
+del "composer.lock"
+php %self%/composer.phar install 
 pause
-goto do

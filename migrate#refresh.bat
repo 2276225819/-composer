@@ -1,6 +1,6 @@
-:LOOP
-php.lnk composer.phar install -d ..
-php.lnk ..\artisan migrate:refresh 
-php.lnk ..\artisan db:seed
+@call set_path.bat 
+@call %self%/composer#install.bat 
 pause
-goto LOOP
+php artisan migrate:refresh 
+php artisan db:seed
+pause 

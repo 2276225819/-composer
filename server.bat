@@ -1,4 +1,4 @@
-cd ..
-".composer-help/php.lnk" artisan serve
+@call set_path.bat  
+php artisan serve
 pause
 

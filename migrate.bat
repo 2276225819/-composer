@@ -1,4 +1,3 @@
-:LOOP
-php.lnk ..\artisan migrate
-pause
-goto LOOP
+@call set_path.bat   
+php artisan migrate
+pause 
