@@ -7,7 +7,7 @@ php %self%/composer.phar create-project --repository-url https://packagist.phpco
 for /D %%i in (temp\*) do (move %%i .)
 move temp\* .
 rd temp
-@call %self%/composer#install.bat
+@call %self%/composer#install.bat 
 pause
 pause
 pause
