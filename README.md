@@ -1,6 +1,5 @@
 # composer help
 + 将composer常用操作改成bat命令，双击即用
-+ 创建的元数据将会使用 https://packagist.phpcomposer.com
 + 请确保***php.lnk***的路径正确
 
 
@@ -19,6 +18,7 @@
 
 ## composer#install.bat
 + 从项目的根目录读取（上一级目录上）读取***composer.json***文件安装依赖库
++ 安装的元数据将会使用 https://packagist.phpcomposer.com 并且写入到***composer.json***
 
 
 ## migrate#mark.bat
