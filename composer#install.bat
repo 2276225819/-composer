@@ -2,6 +2,8 @@
 @set /p choice=delete composer.lock(Y/N)
 @if %%choice%==Y (del "composer.lock" )
 @if %%choice%==y (del "composer.lock" )
-php %self%/composer.phar config repositories.packagist composer "https://packagist.phpcomposer.com"
+
+
+findstr repositories composer.json>nil||php %self%/composer.phar config repositories.packagist composer "https://packagist.phpcomposer.com"
 php %self%/composer.phar install 
 pause
