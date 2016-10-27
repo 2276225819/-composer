@@ -1,6 +1,6 @@
 @call set_path.bat  
-@if exist "composer.lock" (goto:DEL) else (goto:THEN)
-:DEL
+@if exist "composer.lock" (goto:DELETE) else (goto:THEN)
+:DELETE
 @set /p choice=delete composer.lock(Y/N)
 @if "%choice%"=="Y" (del "composer.lock" )
 @if "%choice%"=="y" (del "composer.lock" )
