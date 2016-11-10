@@ -4,5 +4,5 @@
 :LOOP
 cls
 php artisan serve --port %port%
-pause
+@ping 127.0.0.1 -n 2 >nul   
 goto :LOOP
