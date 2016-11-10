@@ -10,4 +10,4 @@ cd %~dp0
 @set self=%cd%
 @del a.vbs
 @del b.vbs   
-cd ..
+cd .. 

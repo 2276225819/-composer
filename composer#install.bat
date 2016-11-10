@@ -1,4 +1,4 @@
-@if exist "set_path.bat" (call set_path.bat)
+@if exist "%~dp0/set_path.bat" (call %~dp0/set_path.bat) else (goto:EOF)
 @if exist "composer.lock" (goto:DELETE) else (goto:THEN)
 :DELETE
 @set /p choice=delete composer.lock(Y/N)
