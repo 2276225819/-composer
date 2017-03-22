@@ -1,13 +1,3 @@
-@if defined SET_PATH goto :eof 
-cd %~dp0
-@set SET_PATH=defined 
-@echo[set ws=createobject("wscript.shell")  >a.vbs 
-@echo[set lnk=ws.CreateShortcut("%cd%/php.lnk"^) >>a.vbs  
-@echo[wscript.echo(  left(lnk.TargetPath, len(lnk.TargetPath)-7 ) )  >>a.vbs 
-@cscript //nologo a.vbs >b.vbs  
-@set /p php=<b.vbs
-@set path=%path%;%php%
-@set self=%cd%
-@del a.vbs
-@del b.vbs   
-cd .. 
+@set PATH=C:\phpstudy\php\php-7.0.12-nts\;%PATH%
+@set self=%~dp0
+@cd ..
