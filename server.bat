@@ -1,4 +1,4 @@
-@if exist "%~dp0/set_path.bat" (call %~dp0/set_path.bat) else (goto:EOF) 
+@if exist "%~dp0/cmd.bat" (call %~dp0/cmd.bat) else (goto:EOF) 
 @echo input port:
 @set /P port=" > "  
 :LOOP
