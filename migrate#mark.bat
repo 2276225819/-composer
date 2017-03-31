@@ -1,4 +1,6 @@
-@if exist "%~dp0/cmd.bat" (call %~dp0/cmd.bat) else (goto:EOF)
+@echo off
+call cmd.bat
+cd ..
 @echo input migrate name: 
 @set /P input= " > " 
 php artisan make:migration %input% 

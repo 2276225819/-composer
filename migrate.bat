@@ -1,3 +1,5 @@
-@if exist "%~dp0/cmd.bat" (call %~dp0/cmd.bat) else (goto:EOF)
+@echo off
+call cmd.bat
+cd ..
 php artisan migrate
 pause 
