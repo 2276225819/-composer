@@ -1,4 +1,3 @@
-@echo off
-call cmd.bat
-start /B php composer.phar update -d ..  
-pause >> nil
+@call %~dp0/run.bat
+@call composer update
+
