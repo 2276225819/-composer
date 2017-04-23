@@ -1,5 +1,4 @@
-@call %~dp0/run.bat
-@call %~dp0/composer#config.bat
+@call %~dp0/run.bat 
 echo input project name:
 set /P vendor=" > "
 echo input project version:
