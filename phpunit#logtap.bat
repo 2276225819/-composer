@@ -1,2 +1,3 @@
 @call %~dp0/run.bat 
-@call phpunit tests --log-tap test.html
+@cls 
+@call phpunit tests --log-junit test.html    
