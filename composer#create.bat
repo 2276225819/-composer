@@ -1,4 +1,3 @@
-@call %~dp0/run.bat 
 echo input project name:
 set /P vendor=" > "
 echo input project version:
