@@ -3,7 +3,7 @@ set /P vendor=" > "
 echo input project version:
 set /P version=" > "  
 echo create-project: %vendor% %version%  
-call composer create-project %vendor% temp %version% 
+composer create-project %vendor% temp %version% 
 for /D %%i in (temp\*) do (move %%i .)
 move temp\* .
 rd temp 

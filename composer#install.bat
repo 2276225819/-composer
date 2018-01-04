@@ -1,2 +1,2 @@
 @del "composer.lock"
-@call composer install
+@start /B composer install

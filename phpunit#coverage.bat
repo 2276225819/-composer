@@ -1,1 +1,1 @@
-@call phpunit tests --coverage-text
+@start /B phpunit tests --coverage-text

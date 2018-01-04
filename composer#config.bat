@@ -1,1 +1,1 @@
-@call composer -g config repositories.packagist composer "https://packagist.phpcomposer.com"  
+start /B composer -g config repositories.packagist composer "https://packagist.phpcomposer.com"  

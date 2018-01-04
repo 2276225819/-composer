@@ -1,1 +1,1 @@
-@call phpunit tests --log-junit test.html
+@start /B phpunit tests --log-junit test.html

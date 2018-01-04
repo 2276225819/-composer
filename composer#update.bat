@@ -1,2 +1,2 @@
-@call composer update
+@start /B composer update
 
